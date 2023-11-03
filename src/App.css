@@ -1,6 +1,19 @@
 #root {
   max-width: 1280px;
   text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+  gap: 16px;
+}
+
+h1 {
+  font-size: 24px;
 }
 
 button {
@@ -11,6 +24,13 @@ button {
   padding: 8px 16px;
   cursor: pointer;
   font-size: 24px;
+}
+
+button:disabled {
+  background-color: aliceblue;
+  color: grey;
+  border-color: grey;
+  cursor: not-allowed;
 }
 
 .add-btn {
@@ -24,4 +44,33 @@ button {
 
 .counters {
   width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.counters p {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.counter div:first-child {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+footer {
+  padding: 32px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+  margin: 0 3px;
 }
